@@ -73,6 +73,14 @@ html {
     font-weight: bolder;
 }
 
+.animated-text::after {
+    content: '|';
+    display: inline-block;
+    animation: changing 6s infinite;
+    white-space: nowrap;
+}
+
+/* Set a fixed width for the animated text to prevent movement */
 
 @keyframes changing {
     0%{content: '|';}
